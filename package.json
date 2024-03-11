@@ -1,0 +1,25 @@
+{
+  "name": "exbanking-test-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mockapi.js",
+  "scripts": {
+    "start": "node ./mockapi/mockapi.js",
+    "test": "mocha test --require ./mockapi/mockapi.js",
+    "load-test": "artillery run performance-test.yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "2.0.7",
+    "axios": "1.6.7",
+    "body-parser": "^1.20.2",
+    "chai": "^5.1.0",
+    "express": "^4.18.3",
+    "fix-esm": "^1.0.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}

@@ -1,0 +1,14 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 30
+      arrivalRate: 5
+
+scenarios:
+  - flow:
+      - post:
+          url: '/create_user'
+          json:
+            { name: 'Test'}
+      - get:
+          url: '/get_balance/{{ userId }}'
