@@ -7,6 +7,10 @@ const API_BASE_URL = 'http://localhost:3000';
 
 describe('Test Cases for ExBanking APIs', () => {
 
+//End process after all tests are done
+  after( () => {
+    process.exit(0);
+  });
 
   // Test for create_user API
   it('Should create a new user successfully', async () => {
